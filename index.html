@@ -2,25 +2,12 @@
 <html>
 <head>
     <title>Redirect Form Submission</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-    </style>
 </head>
 <body>
 
 <!-- Google Form embedded code -->
 
-<iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeX8JkDQvhhOAKt7U7BaFz4MWu-sjneisGGEiGNkL1wlkNUxQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeX8JkDQvhhOAKt7U7BaFz4MWu-sjneisGGEiGNkL1wlkNUxQ/viewform?embedded=true" width="640" height="375" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 <script>
 var load = 0;
@@ -31,14 +18,7 @@ document.getElementById('gform').onload = function(){
     if(load > 1){
         /*Second reload is a submit*/
         document.location = "https://wa.me/9392643148";
-        window.close(); // Close the window after form submission
     }
-}
-</script>
-
-</body>
-</html>
-
 }
 </script>
 
