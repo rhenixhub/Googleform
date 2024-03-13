@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect Form Submission</title>
+</head>
+<body>
+
+<!-- Google Form embedded code -->
+
+<iframe id="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSeX8JkDQvhhOAKt7U7BaFz4MWu-sjneisGGEiGNkL1wlkNUxQ/viewform?embedded=true" width="640" height="375" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<script>
+var load = 0;
+
+document.getElementById('gform').onload = function(){
+    /*Execute on every reload on iFrame*/
+    load++;
+    if(load > 1){
+        /*Second reload is a submit*/
+        document.location = "https://wa.me/9392643148";
+    }
+}
+</script>
+
+</body>
+</html>
